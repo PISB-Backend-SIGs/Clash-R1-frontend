@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Leadeerboard3.css">
+    <title>Leaderboard</title>
+</head>
+<body>
+    <div class="Navbar2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <a class="navbar-brand" href="#"></a> -->
+            <img class="logo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIHBhMSBxISFRUXGRYaGBcXGRoeIBsZHR4dHhoYGBsdIigmHx8nHhsdLTEjMSstLi4vHx8/ODM4NygtLy0BCgoKDQ0NFw8QGislICU3Kzc3Nys1LSs3LSs3NysyNy43Nyw4NS83Ky03NzctLTUrMjc1LTUtLSsrLi8tLSsyK//AABEIAMgAyAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABQYHBAMCAf/EAEQQAAEDAwIDBQMIBQsFAAAAAAEAAgMEBREGEhMhMQciQVFxFGGBFTJCUpGhstFic6KxwRYjNTZVgoOSwtLwFzQ3VHL/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQMEAgX/xAAhEQEAAgICAgIDAAAAAAAAAAAAAQIDESExBBJBUTKBsf/aAAwDAQACEQMRAD8A3FERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARfLnBuM+PRfSDiuVyitkbXVzgxrnBocegJzjPl0XWDkclUu1WES6JmJ+gY3D13tb/AKiqBofX0lj2w3Tc+DwP0mD3ebfd9iurhm9PaEb5bci5qKsZX0zZKRwexwyHDoV0qlIiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgofa7UcKyRNacF0mf8oP5qtWrUd0stK19QySWEgEF7SRtx1DxzHxUl2yzZmpmDwEjj8S0D9xWg2OPhWaAAYxHH+EIKJddb0+odMVEL2ujldG7aw8wXDvcnD08cL40lpqn1PoCFtYMPaZQyRvVvfcfiOfQq26jtdLJQySVbIWv2u2yOw0hxHLvLPNI0tUbexthfMJWuduc0jggE5724d49emVbW+qcTztGuXJFJXdmt0xKOJA4/wBx/vH1Xf8AOa1fT9+gv9FxLe7P1mnq0+TgvT2H2u1cK+cOXIw/DcNPwz96xK3OfT61LdEufgu2sz0Lfpbv0OvXwVkRGaJnqYR038rDtK0FVqa4yxxVksewbslzz44x85bbFnhji4zgZx0z7lhWjqmtprnM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" height="60px" width="80px">
+            <div class="profile">
+            <img class="DP" src="https://yt3.ggpht.com/a/AGF-l79X7BWfrD07NINxSW0I8qbLS_G2kSqe3pKsmg=s900-c-k-c0xffffffff-no-rj-mo" width="50px" height="50px" alt="">
+            <h5 class="prf"><a href="https://google.com">profile</a></h5>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">Home </a>
+                <a class="nav-item nav-link" href="#">Instructions</a>
+                <a class="nav-item nav-link" href="#">Lifelines</a>
+                <a class="nav-item nav-link" href="#">MCQ Page</a>
+                <a class="nav-item nav-link" href="#">Result</a>
+                <a class="nav-item nav-link active" href="#">Leaderboard <span class="sr-only">(current)</span></a>
+            </div>
+          </nav>
+    </div>
+    <div class="Head">
+        <H1 >Leaderboard</H1>
+    </div>
+    <center>
+    <div class="searchbar">
+      <form class="shbtn">
+        <button class="shion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg></ion-icon></button>
+        <input type="text" id="input" placeholder="Search" onkeyup="searchElement()">
+        <label for="input" aria-placeholder="Search" ></label>
+        
+      </form>
+    </div>
+  </center>
+
+    <!-- <div class="input-group">
+      <form action="click">
+      <div class="form-outline">
+        <input type="search" placeholder="Search" id="form1" class="form-control" />
+        </form> --
+        <form class="d-flex" action="onclick">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+      
+      <button type="button" class="btn" id="btns" data-toggle="collapse">
+        <i class="fas fa-search"></i>
+        <img src="https://th.bing.com/th/id/R.d54acd6d0779cf03bfed88f06d6ef15d?rik=TJ4PHSIWct46Cw&riu=http%3a%2f%2fwww.jpgroupclassic.com%2fgfx%2fsearch-classic.png&ehk=Sr983x3hvknfDLxyotNK8v2J6xHzb42gzwIItw1Mezg%3d&risl=&pid=ImgRaw&r=0" width="30px" height="30px" > 
+        <ion-icon name="search"><img src="https://unpkg.com/ionicons@5.5.2/dist/svg/search.svg" alt="" height="17px"></ion-icon>
+        <img src="https://th.bing.com/th/id/R.d03d66f16412c825cad6f8c59b8db3eb?rik=Pja5v1ZiO8UeMg&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fp%2fQ%2fi%2fK%2fZ%2fv%2fsearch-icon-hi.png&ehk=%2f7nKaBm8Ks%2bwB9Begkqo1TYrVvbkRhVAnGjN4wCteTU%3d&risl=&pid=ImgRaw&r=0" width="30px" height="30px" alt="">
+      </button> 
+    </div> 
+    <button class="refresh"><img src="https://cdn.onlinewebfonts.com/svg/img_72363.png" width="17px" height="18px"></button>
+  </div> -->
+
+    <!-- <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+     
+    </form> -->
+
+    <div class="Heading">
+      <p class="current-user-status">Your Rank</p>
+      <p class="Reload">Page Reloads in: 0:00:00</p>
+    </div>
+
+    <div class="user">
+    <table class="leader-table table table-hover" >
+      <thead>
+        <tr class="usera" bgcolor="#13303E">
+          <th scope="col" class="userb">Rank</th>
+          <th scope="col" class="userb">Name</th>
+          <th scope="col" class="userb">Score</th>
+          <th scope="col" class="userb">Attempts</th>
+          <th scope="col" class="userb">Time</th>
+        </tr>
+      </thead>
+    <tr class="user-rank" bgcolor="1F0F0F">
+      <td class="user-status" scope="row" style="border-left:3px solid #FA9C1B; border-top-color: #44DD45; border-bottom-color: #44DD45;">7th</td>
+      <td class="user-status" style="border-top-color: #44DD45; border-bottom-color: #44DD45;">Henry</td>
+      <td class="user-status" style="border-top-color: #44DD45; border-bottom-color: #44DD45;">77</td>
+      <td class="user-status" style="border-top-color: #44DD45; border-bottom-color: #44DD45;">9/10</td>
+      <td style="border-top-color: #44DD45; border-bottom-color: #44DD45; border-right-color: #44DD45;">0:21:00</td>                    
+    </tr>
+  </table>
+  </div>
+  
+ 
+     
+  <div class="Search">
+    <p class="orank">Overall Rankings</p>
+    </div>
+
+  <div class="tble">
+    <table class="leader-table table table-hover" id="myTable" bgcolor = "#2E363B">
+      <thead >
+        <tr class="usera" bgcolor="#13303E">
+          <th scope="col" class="userb">Rank</th>
+          <th scope="col" class="userb">Name</th>
+          <th scope="col" class="userb">Score</th>
+          <th scope="col" class="userb">Attempts</th>
+          <th scope="col" class="userb">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row" /*class="gold"*/ >1st</td>
+          <td /*class="gold"*/ >Mark</td>
+          <td /*class="gold"*/ >100</td>
+          <td /*class="gold"*/ >10/10</td>
+          <td /*class="gold"*/ >0:10:00</td>
+        </tr>
+        <tr >
+          <td scope="row" /*class="silver"*/ >2nd</td>
+          <td /*class="silver"*/ >Jacob</td>
+          <td /*class="silver"*/ >95</td>
+          <td /*class="silver"*/ >10/10</td>
+          <td /*class="silver"*/ >0:12:00</td>
+        </tr>
+        <tr >
+          <td scope="row" /*class="bronze"*/>3rd</td>
+          <td /*class="bronze"*/>Bob</td>
+          <td /*class="bronze"*/>91</td>
+          <td /*class="bronze"*/>10/10</td>
+          <td /*class="bronze"*/>0:15:00</td>          
+        </tr>
+        <tr >
+          <td scope="row">4th</td>
+          <td>Ted</td>
+          <td>85</td>
+          <td>9/10</td>
+          <td>0:18:00</td>  
+        </tr>        
+        <tr >
+          <td scope="row">5th</td>
+          <td>Micheal</td>
+          <td>81</td>
+          <td>9/10</td>
+          <td>0:20:00</td>          
+        </tr>
+        <tr >
+          <td scope="row">6th</td>
+          <td>Joey</td>
+          <td>79</td>
+          <td>9/10</td>
+          <td>0:20:50</td>          
+        </tr>
+        <tr >
+          <td scope="row">7th</td>
+          <td>Henry</td>
+          <td>77</td>
+          <td>9/10</td>
+          <td>0:21:00</td>          
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="Pagination">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous>
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next>
+            <span aria-hidden="trre">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer">
+    <p style="color:#2E363B;">PISB</p>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      // document.getElementById("btns").addEventListener("click",()=>{
+      //   let a =document.getElementById("form1");
+      //   a.classList.toggle("btn-hide");
+        // function validateSearch(){
+        //   var x=document.forms[""]
+        // }
+        // if ()
+        // if (a.style.display = "none"){
+
+        //   a.style.display = "block";
+        // }else{
+        //   a.style.display = "none";
+        // }
+
+      //})
+      
+      const searchElement= () => {
+        let filter = document.getElementById('input').value.toUpperCase();
+        
+        let myTable = document.getElementById('myTable');
+
+        let tr = myTable.getElementsByTagName('tr');
+
+        for(var i=0; i<tr.length;i++){
+            let td = tr[i].getElementsByTagName('td')[1];
+
+            if(td){
+              let textValue = td.textContent || td.innerHTML;
+
+               if(textValue.toUpperCase().indexOf(filter) > -1){
+                    tr[i].style.display= "";
+               }else{
+                    tr[i].style.display = "none";
+               }
+            }
+        }
+        }
+
+    </script>
+</body>
+</html>
