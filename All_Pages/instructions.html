@@ -28,48 +28,24 @@
    
    <div class="wrapper">
     <div class="header">
-      <nav>
-        <div id="mySidebar" class="sidebar">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-          <a href="#">Instructions</a>
-          <a href="#">Logout</a>
-          </div>
-          
-          <div id="main">
-          <button class="openbtn" onclick="openNav()">☰</button>  
-          </div>
-          
-            <div class="content">
-              <li class="logo">
-                <a href="#">
-                  <img src="clashwhite.png" alt="RC">
-                </a>
-              </li>
-            </div>
-            <div class="centerr">
-              <div class="timer">
-                <ul class="tab">              
-                  <li><a href="#">Timer: 29:48</a></li>
-                </ul>
-              </div>
-          
-            
-              <!-- <div class="logo">
-                <a href="#">Clash</a>
-              </div> -->
-            </div>
-
-          
-            <div class="links" style="justify-content: flex-end ;">             
-              <li><a href="MCQFinal.html">MCQ</a></li>
-              <li><a href="#">Logout</a></li>       
-              <li><a href="#">
-                <img src="#" alt="PISB IEEE">
-              </a></li>
-            </div>
-          
-        
-      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="#">
+          <img src="clashwhite.png" alt="RC" height="52px" width="102px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+          <a class="nav-item nav-link active" id="navlink" href="login.html">Log In</a>
+          <!-- <a class="nav-item nav-link active" href="instructions.html">Instructions</a> -->
+          <a class="nav-item nav-link active" id="navlink" href="MCQFinal.html">MCQ page</a>
+          <a class="nav-item nav-link active " id="navlink" href="resultPage.html">Result</a>
+          <a class="nav-item nav-link active" id="navlink" href="Leaderboard3.html">Leaderboard  </a>
+          <a class="nav-item nav-link active" id="navlink" href="#">LogOut</a>
+        </div>
+        <img src="#" alt="PISB IEEE">
+        </nav>
     </div>
 
     <div class="container2" style="margin-top: 75px">
@@ -289,7 +265,7 @@
 
     <div class="footernew" >
       <footer>
-          <p>PISB</p>
+          <p class="footertext">@PISB</p>
       </footer>
    </div>
 
