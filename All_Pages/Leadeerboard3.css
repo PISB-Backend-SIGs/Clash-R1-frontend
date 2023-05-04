@@ -15,11 +15,12 @@ body {
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
-    background-color: #0e1230;
+    /* background-color: #0e1230; */
     -webkit-font-smoothing: antialiased;
     /* background: url("https://media.istockphoto.com/id/1055882990/vector/abstract-futuristic-presentation-panel-technology-display.jpg?s=612x612&w=0&k=20&c=lEkPB5umoOVg2tX5ariS4USUrjfArnhjiVFbzorVM2Y="); 
        background: url(https://e0.pxfuel.com/wallpapers/168/276/desktop-wallpaper-universe-interstellar-space-6k-space.jpg); */
-    background-image: linear-gradient(#141e30,#0d1927);
+    /* background-image: linear-gradient(#141e30,#0d1927); */
+    background: linear-gradient(#141e30,#0d1927);
     /* background: url("https://iriomote-tour.com/wp-content/uploads/2017/12/24c7afb6bf0cd7a7fd8bdc90c0040c97_m.jpg");
     /* height: fit-content; */
     /* background-repeat: no-repeat; 
@@ -49,8 +50,9 @@ body {
   }
   
   .Navbar2{
-    height: auto;
+    height: 70px;
     padding: 0;
+    background: linear-gradient(#141e30,#0d1927);
   }
   
   .logo{
@@ -132,7 +134,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    text-decoration-color: #08f4ac;
+    text-decoration-color: #c5e1f0;
     /* color: aqua; */
     /* padding: 10px; */
     width: -webkit-fill-available;
@@ -149,7 +151,7 @@ body {
     padding: 20px;
     display: flex;
     align-items: center;
-    color: #08f4ac;
+    color: #c5e1f0;
     justify-content: center;
     margin-top: 10px;
     /* text-shadow: 2px 2px #16d6b9;  */
@@ -215,7 +217,7 @@ body {
     justify-self: self-start;
     font-size: 1.1rem;
     font-weight: 00;
-    border: 1px solid #08f4ac;
+    border: 1px solid #c5e1f0;
     /* border: 2px solid #129ef5; */
     /* border: 2px solid aqua; */
     width: fit-content;
@@ -359,7 +361,7 @@ body {
 }
 .leader-table tr{
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid black #c5e1f0;
     width: -webkit-fill-available;
     border-color: #D28511;
     overflow: auto;
@@ -378,7 +380,8 @@ body {
     rgba(46, 151, 237, 0.05) 0 1px 0 0px,
     rgba(68, 186, 207, 0.03)  0 8px 0px,
     rgba(24, 231, 231, 0.1) 0 8px 8px 0px; */
-    box-shadow: 2px 0px 6px 2px rgb(13, 182, 123); 
+    box-shadow: 2px 0px 6px 2px #c5e1f0;
+    ; 
     border-radius: 10px;
     transform: scale(1.025);
     transition: 0.2s;
@@ -390,11 +393,11 @@ transition: .2s ease-in-out transform;
     transform: none;
     transition: none;
 }
- p{
+ /* p{
     margin: 0;
     color: #fffff0;
     background-color: aliceblue;
-} 
+}  */
 
 
 .table td, .table th,.table thead th{
@@ -408,12 +411,12 @@ transition: .2s ease-in-out transform;
     border-color: aqua;
     border-color: #9d4783;
     border-color: aqua;
-    border-color: rgb(5, 92, 47);
+    border-color: #c5e1f0;
     
 }
 
 .table th{
-    color: #08f4ac;
+    color: #c5e1f0;
 }
 .userb{
     font-weight: 500;
@@ -426,7 +429,7 @@ transition: .2s ease-in-out transform;
     border-right: 2px solid;
     /* border-color: #1f6581; */
     border-color: #9d4783;
-    border-color: rgb(5, 92, 47);
+    border-color: #c5e1f0;
     /* border-color: aqua; */
 }
 
@@ -434,7 +437,7 @@ transition: .2s ease-in-out transform;
     border-radius: 8px 0 0 8px;
     border-left: 2px solid;
     border-color: #9d4783;
-    border-color: rgb(5, 92, 47);
+    border-color: #c5e1f0;
     /* border-color: aqua; */
 }
 
@@ -442,7 +445,7 @@ transition: .2s ease-in-out transform;
     border-radius: 8px 0 0 8px;
     border-left: 2px solid;
     border-color: #9d4783 ; 
-    border-color: rgb(5, 92, 47);
+    border-color: #c5e1f0;
     /* box-shadow: 0px 2px #0983cf; */
     /* border-color: aqua; */
     outline: none;
@@ -452,7 +455,7 @@ transition: .2s ease-in-out transform;
     border-right: 2px solid;
     border-color: #9d4783;
     /* border-color: rgb(30, 120, 120);*/
-    border-color: rgb(5, 92, 47); 
+    border-color: #c5e1f0; 
     /* box-shadow: 2px 2px #129ef5; */
     /* border-color: aqua; */
     outline: none;
@@ -482,7 +485,7 @@ dl, ol, ul {
 #paginbtn{
     padding: 7px 14px;
     margin: 5px 2px;
-    color: #92e6ff;
+    color: #c5e1f0;
     background-color: #0e1230;
     font-size: 1.1rem;
     border-radius: 7px;
@@ -491,23 +494,23 @@ dl, ol, ul {
     color: #fffff0;
     background-color: #292929;
 }
-.footer{
+.footer {
     display: flex;
-    background: linear-gradient(45deg, #19638b, #011722);
+    /* background: linear-gradient(45deg, #19638b, #011722); */
+    background: linear-gradient(#141e30,#0d1927);
     justify-content: center;
-    background-color: #fffff0;
-    font-size: larger;
-    font-style: italic;
-    font-weight: 600;
+    /* background-color: #fffff0; */
+    /* font-size: larger; */
+    /* font-style: italic; */
+    /* font-weight: 600; */
+    height: 55px;
     /* border: 1px solid #D28511; */
     max-width: -webkit-fill-available;
-    /* bottom: 0;
-    position: sticky; */
 }
 
 .footertext{
     font-size: 1.4rem;
-    color: #92e6ff;
+    color: #c5e1f0;
     align-items: center;
     align-self: center;
     margin-bottom: 0!important;
