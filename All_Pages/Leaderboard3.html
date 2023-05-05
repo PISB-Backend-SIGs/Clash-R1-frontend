@@ -20,12 +20,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-          <a class="nav-item nav-link active" id="navlink" href="login.html">Log In</a>
+         
           <a class="nav-item nav-link active" id="navlink" href="instructions.html">Instructions</a>
           <a class="nav-item nav-link active" id="navlink" href="MCQFinal.html">MCQ page</a>
           <a class="nav-item nav-link active " id="navlink" href="resultPage.html">Result</a>
           <!-- <a class="nav-item nav-link active" id="navlink" href="Leaderboard3.html">Leaderboard  </a> -->
-          <a class="nav-item nav-link active" id="navlink" href="#">LogOut</a>
+          
         </div>
         <img src="#" id="ieeelogo" alt="PISB IEEE">
         </nav>
@@ -76,13 +76,13 @@
     <div class="Heading">
       <p class="current-user-status">Your Rank</p>
       <!-- <p class="Reload">Page Reloads in: 0:00:00</p> -->
-      <table>
-        <thead>
+      <table class="current-user-rank">
+        <thead id="current-user-rank">
            <th>
             Page Reloads <br>In
            </th>
         </thead>
-        <tbody>
+        <tbody id="current-user-rank">
           <td>
             0:00:00
           </td>
@@ -225,7 +225,7 @@
     </div>
 
     <div class="Pagination">
-    <!-- <nav aria-label="Page navigation example">
+    <nav aria-label="Page navigation example">
       <ul class="pagination">
         <li class="page-item">
           <a class="page-link" href="#" aria-label="Previous>
@@ -243,14 +243,14 @@
           </a>
         </li>
       </ul>
-    </nav> -->
-    <div class="index_buttons" id="index_btn">
+    </nav>
+    <!-- <div class="index_buttons" id="index_btn">
       <button id="paginbtn"> |pre| </button>
       <button class="active" id="paginbtn"> 1 </button>
       <button id="paginbtn">  2 </button>
       <button id="paginbtn">  3 </button>
       <button id="paginbtn"> |>>| </button>
-    </div>
+    </div> -->
   </div>
   <div class="footer">
     <p class="footertext">@PISB</p>
@@ -304,7 +304,7 @@
 
 
         var myArray =  [
-     {'rank': '1', 'name': 'Alice', 'score': '95', 'attempts': '3', 'time': '120'},
+     {'rank': '1', 'name': 'Alice', 'score': '95', 'attempts': '3', 'time': '00:15'},
      {'rank': 2, 'name': 'Bob', 'score': 85, 'attempts': 2, 'time': 90},
     {'rank': '3', 'name': 'Charlie', 'score': '70', 'attempts': '4', 'time': '150'},
     {'rank': '4', 'name': 'David', 'score': '60', 'attempts': '5', 'time': '180'},
@@ -477,7 +477,7 @@ var table = document.getElementById('myTable');
  
   
   
-
+<script>
   // function pageTravel(index){
   //       current_index = parseInt(index);
   //       highlightIndexButton
@@ -500,7 +500,7 @@ var table = document.getElementById('myTable');
   //     }
   // }
    
-  
+</script>
 
 
 </body>

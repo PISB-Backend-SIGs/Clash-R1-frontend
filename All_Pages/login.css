@@ -453,6 +453,7 @@ label span:before {
 }
 .footer {
   background: linear-gradient(45deg, #19638b, #011722);
+  
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -464,18 +465,19 @@ label span:before {
   position: fixed;
   left: 0;
   bottom: 0;
-  flex-shrink: 0;
+  background: linear-gradient(45deg, #19638b, #011722);
+  
 }
-.footer .leftieee,
+/* .footer .leftieee,
 .footer .middleieee {
   padding-top: 5px;
 }
 .footer .social-links {
   display: flex;
-  /* float: right; */
+  /* float: right; 
   justify-content: center;
   font-size: 18px;
-  /* margin-bottom: 1.2rem; */
+  /* margin-bottom: 1.2rem; 
 }
 .social-links a {
   border: 2px solid #fff;
@@ -512,7 +514,7 @@ label span:before {
 
 .social-links a:hover {
   transform: rotate(0deg) skew(0deg) translate(0, -8px);
-}
+} */
 
 .footertext{
   font-size: 1.4rem;
