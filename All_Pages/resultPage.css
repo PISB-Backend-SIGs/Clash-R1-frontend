@@ -181,12 +181,12 @@ body {
       linear-gradient(#000 0 0) padding-box no-repeat;
     transition: .3s, -webkit-mask-position .3s .3s;
 }
-
+/* 
 .name:hover{
     --_i: 100%;
   color: #c5e1f0;
   transition: .3s, -webkit-mask-size .3s .3s;
-}
+} */
 
 .name:hover #name{
   color: #c5e1f0;
