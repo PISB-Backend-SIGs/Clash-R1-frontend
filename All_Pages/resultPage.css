@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
 }
-body{
-    margin: 0;
-    padding: 0;
-    /* background-color: rgb(14, 14, 28); */
-    height: auto;
-    /* overflow:auto; */
-    background: linear-gradient(#141e30,#0d1927);
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(14, 14, 28); */
+  /* height: auto; */
+  height: 100vh;
+  /* overflow: auto; */
+  background: linear-gradient(#141e30,#0d1927);
 }
-
 @font-face {
     font-family: solthin;
     src: url(solthinregular.ttf);
@@ -231,10 +231,10 @@ body{
 
 
 .carousel {
-  width: 50%;
+  width: 100%;
   height: 40vh;
   padding: 20px;
-  margin: 25px 25px;
+  /* margin: 25px 25px; */
   /* background: #031f0f; */
   display: flex;
   flex-direction: row;
@@ -245,21 +245,21 @@ body{
 .box{
     width: 30vw;
     height: 35vh;
-    background-color: black;
+    background-image: linear-gradient(#0e1420,#081019);
     margin: 0px 1px;
     transition: 1s;
 
 }
 .box:hover{
-    transform: scale(1.2);
+    transform: scale(1.03);
     background: linear-gradient(#0f2040,#03152b);
     
     z-index: 2;
     box-shadow: 2px 2px 2px #000;
-    border: 2px solid aqua;
+    border: 2px solid  #c5e1f0;
 }
 .box:hover .titlec{
-  color: aqua;
+  color: #c5e1f0;
   text-shadow: 2px 2px 0.1px rgb(0, 3, 26);
 }
 
@@ -268,7 +268,7 @@ body{
 }
 
 .box:hover #qatm2{
-  color: aqua;
+  color: #c5e1f0;
 }
 
 .first,.second,.third{
