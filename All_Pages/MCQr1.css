@@ -562,30 +562,21 @@ th {
   transition: 0.2s ease-out;
 }
 .modal.show .modal-dialog {
-  animation: modalmoves 5s 1;
+  animation: modalmoves 2s 1 ease-in;
   /* scale: 0.5; */
 }
 
 @keyframes modalmoves {
   0% {
-    scale: 0.01;
-  }
-  25% {
     scale: 0.1;
-    transform: skewY(25deg);
-    transform: skewY(25deg);
-    rotate: 60deg;
   }
+  
   50% {
     scale: 0.2;
-    transform: skewX(25deg);
-    transform: skewY(135deg);
     rotate: 120deg;
   }
   75% {
     scale: 0.5;
-    transform: skewX(0deg);
-    transform: skewX(0deg);
     rotate: 180deg;
   }
   100% {
