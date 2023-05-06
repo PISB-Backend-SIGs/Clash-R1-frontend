@@ -190,7 +190,7 @@
 }
 
 .sidebar {
-  text-emphasis: none;
+  text-decoration: none;
   height: 200px;
 }
 
@@ -442,7 +442,7 @@ th {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: auto 20px;
+  margin: 20px;
 }
 .scoretable {
   width: 40%;
@@ -527,6 +527,11 @@ th {
   transition: 0.2s ease-in-out;
 }
 
+.disappear{
+  visibility:hidden;
+  transition: 2s;
+}
+
 .lifeline2:hover {
   /* background-color: #0b6052; */
   box-shadow: 2px 2px 7px #c5e1f0, -2px -2px 7px #c5e1f0, 2px -2px 2px #c5e1f0,
@@ -568,12 +573,12 @@ th {
 
 @keyframes modalmoves {
   0% {
-    scale: 0.1;
+    scale: 0.02;
   }
   
   50% {
-    scale: 0.2;
-    rotate: 120deg;
+    scale: 0.1;
+    rotate: 900deg;
   }
   75% {
     scale: 0.5;
@@ -635,7 +640,7 @@ th {
 }
 
 .Submit {
-  width: 40%;
+  width: 50%;
   margin: 10px auto 50px auto;
   /* margin-bottom: 20px; */
 }
@@ -721,11 +726,13 @@ th {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 7px;
   }
   .quecol {
     /* grid-template-rows: 1fr; */
     display: flex;
     flex-direction: column-reverse;
+    gap: 0;
   }
 
   .options {
@@ -887,8 +894,11 @@ th {
   #lf {
     width: 100%;
     margin: 0;
-    height: fit-content;
+    height: -webkit-fill-available;
     align-self: center;
+  }
+  .travel-opt{
+    margin: 5px 35px!important;
   }
 }
 
